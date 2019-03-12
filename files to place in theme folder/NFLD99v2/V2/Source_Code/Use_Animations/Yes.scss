@@ -1,0 +1,344 @@
+/* Animations For My Themes */
+
+@keyframes Spin {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.9);
+        transform: rotate(0deg) scale(0.9);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.9);
+        transform: rotate(360deg) scale(0.9);
+    }
+}
+
+@keyframes Talking {
+    0% {
+        transform: rotate(-360deg) scale(1);
+		box-shadow: 0 0 0 2px var(--Main-Colour);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+		box-shadow: 0 0 0 2px var(--Main-Colour);
+    }
+}
+
+@keyframes Load4 {
+  from {
+    top: 50%;
+    bottom: 50%;
+  }
+}
+
+/* Old Loading
+@keyframes Load4 {
+    0% {
+        -webkit-transform: scale(0);
+        transform: rotate(-360deg) scale(0);
+		opacity:1;
+    }
+    25% {
+        -webkit-transform: scale(1);
+        transform: rotate(-315deg) scale(.25);
+		opacity:1;
+    }50% {
+        -webkit-transform: scale(1);
+        transform: rotate(-405deg) scale(.75);
+		opacity:1;
+    }100% {
+        -webkit-transform: scale(1);
+        transform: rotate(-360deg) scale(1);
+		opacity:1;
+    }
+} */
+
+@keyframes opacity {
+  0% {
+    background-color: var(--Unread-Message-1);
+  }
+
+  50% {
+    background-color: var(--Unread-Message-2);
+  }
+
+  100% {
+    background-color: var(--Unread-Message-1);
+  }
+}
+
+@keyframes color_change {
+  from {
+    color: var(--Background-Colour);
+  }
+
+  to {
+    color: #00c416;
+  }
+}
+
+@keyframes shakeUnread {
+  0% {
+    transform: translate(calc(100% / -2 - 36px), 0);
+  }
+
+  100% {
+    transform: translate(calc(100% / 2 + 8px), 0);
+  }
+}
+
+@keyframes rainbow {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes Connecting {
+  0% {
+    background: var(--Chat-Background);
+  }
+
+  50% {
+    background: var(--Settings-Background);
+  }
+
+  100% {
+    background: var(--Callout-Background);
+  }
+}
+
+@keyframes TextScroll {
+  from {
+    left:-230px;
+  }
+
+  to {
+    left:100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes boop {
+  0% {
+    transform: translate(0, 20px);    
+  }
+  100% {
+    transform: translate(0, -25px);
+  }
+}
+
+@keyframes boop2 {
+  0% {
+    transform: translate(0, -25px); 
+  }
+  100% {
+    transform: translate(0, -70px);
+  }
+}
+
+@keyframes PFB {
+  0% {
+    transform: translate(0px, -70px);   
+  	opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 00px);
+	opacity: 1;
+  }
+}
+
+@keyframes Dnd {
+  0%{border: 2.5px solid rgba(240,71,71,1); box-shadow: 0px 0px 5px rgba(240,71,71,1);}
+  50%{border: 2.5px solid rgba(240,71,71,0.4); box-shadow: 0px 0px 1px rgba(240,71,71,0.4);}
+  100%{border: 2.5px solid rgba(240,71,71,1); box-shadow: 0px 0px 5px rgba(240,71,71,1);}
+}
+
+@keyframes Online {
+  0%{border: 2.5px solid rgba(67,181,129,1); box-shadow: 0px 0px 5px rgba(67,181,129,1);}
+  50%{border: 2.5px solid rgba(67,181,129,0.4); box-shadow: 0px 0px 1px rgba(67,181,129,0.4);}
+  100%{border: 2.5px solid rgba(67,181,129,1); box-shadow: 0px 0px 5px rgba(67,181,129,1);}
+}
+
+@keyframes Away {
+  0%{border: 2.5px solid rgba(250,166,26,1); box-shadow: 0px 0px 5px rgba(250,166,26,1);}
+  50%{border: 2.5px solid rgba(250,166,26,0.4); box-shadow: 0px 0px 1px rgba(250,166,26,0.4);}
+  100%{border: 2.5px solid rgba(250,166,26,1); box-shadow: 0px 0px 5px rgba(250,166,26,1);}
+}
+
+@keyframes Stream {
+  0%{border: 2.5px solid rgba(89,54,149,1); box-shadow: 0px 0px 5px rgba(89,54,149,1);}
+  50%{border: 2.5px solid rgba(89,54,149,0.4); box-shadow: 0px 0px 1px rgba(89,54,149,0.4);}
+  100%{border: 2.5px solid rgba(89,54,149,1); box-shadow: 0px 0px 5px rgba(89,54,149,1);}
+}
+
+@keyframes Offline {
+  0%{border: 2.5px solid rgba(116,127,141,1); box-shadow: 0px 0px 5px rgba(116,127,141,1);}
+  50%{border: 2.5px solid rgba(116,127,141,0.4); box-shadow: 0px 0px 1px rgba(116,127,141,0.4);}
+  100%{border: 2.5px solid rgba(116,127,141,1); box-shadow: 0px 0px 5px rgba(116,127,141,1);}
+}
+
+@keyframes SFA {
+  0% {
+    transform: translate(0, -300px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes SFC {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-30px, 0); 
+    opacity: 0;
+    display:none;
+  }
+}
+
+@keyframes Brainbow {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes Links {
+  0%{
+      text-shadow: 0 0 6px #2ECC71;
+  }
+  3.7%{
+      text-shadow: 0 0 6px #E09E36
+  }
+  7.4%{
+      text-shadow: 0 0 6px #5B2076
+  }
+  11.1%{
+      text-shadow: 0 0 6px #277ECD
+  }
+  14.8%{
+      text-shadow: 0 0 6px #970045
+  }
+  18.5%{
+      text-shadow: 0 0 6px #277ECD
+  }
+  22.2%{
+      text-shadow: 0 0 6px #00ACEA
+  }
+  25.9%{
+      text-shadow: 0 0 6px #FF9900
+  }
+  29.6%{
+      text-shadow: 0 0 6px #B378D3
+  }
+  33.3%{
+      text-shadow: 0 0 6px #FF9900
+  }
+  37%{
+      text-shadow: 0 0 6px #87CEFA
+  }
+  40.7%{
+      text-shadow: 0 0 6px #228C29
+  }
+  44.4%{
+      text-shadow: 0 0 6px #00ACEA
+  }
+  48.1%{
+      text-shadow: 0 0 6px #F9BD05
+  }
+  51.8%{
+      text-shadow: 0 0 6px #00ACEA
+  }
+  55.5%{
+      text-shadow: 0 0 6px #00E2CC
+  }
+  59.2%{
+      text-shadow: 0 0 6px #00F800
+  }
+  62.9%{
+      text-shadow: 0 0 6px #FF9900
+  }
+  66.6%{
+      text-shadow: 0 0 6px #0084EA
+  }
+  70.3%{
+      text-shadow: 0 0 6px #F04937
+  }
+  74%{
+      text-shadow: 0 0 6px #99FFFF
+  }
+  77.7%{
+      text-shadow: 0 0 6px #990A0A
+  }
+  81.4%{
+      text-shadow: 0 0 6px #4A6B1A
+  }
+  85.1%{
+      text-shadow: 0 0 6px #9DD0EB
+  }
+  88.8%{
+      text-shadow: 0 0 6px #818689
+  }
+  92.5%{
+      text-shadow: 0 0 6px #277ECD
+  }
+  100%{
+      text-shadow: 0 0 6px #2ECC71;
+  }
+}
+
+@keyframes fail {
+  0% {
+    box-shadow: 0px 0px 20px 0px red;
+  }
+  50% {
+    box-shadow: 0px 0px 70px 0px red;
+  }
+  100% {
+    box-shadow: 0px 0px 20px 0px red;
+  }
+}
+
+@keyframes NSFW {
+  0% {
+    fill: var(--M-Colour);
+  }
+  50% {
+    fill: var(--Main-Colour);
+  }
+  100% {
+    fill: var(--M-Colour);
+  }
+}
+
+.contentUnreadText-2vNnZc:hover, .contentUnreadText-2vNnZc{
+  background:transparent!important;
+}

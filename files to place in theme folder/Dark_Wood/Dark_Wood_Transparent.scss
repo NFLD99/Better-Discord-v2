@@ -1,0 +1,91 @@
+@import "../NFLD99v2/V2/Source_Code/Master_Code.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Animations/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Fonts/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Minimal/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Popup/Yes.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Channels/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Chat_Title_Bar/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Guilds/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Invites/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Members/Yes.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Windows_Bar/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Offline/No.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Hide/Popout_Footer/Yes.scss";
+@import "../NFLD99v2/V2/Source_Code/Use_Transparency/Yes.scss";
+:root {
+  --Main-Colour: rgba(158, 109, 200, 1);
+  --Background-Colour: rgba(0, 0, 0, 1);
+  --S-Colour: rgba(0, 0, 0, .3);
+  --M-Colour: rgba(243, 112, 243, 0.5);
+  --Text-Shadow-Colour: rgba(0, 0, 0, .45);
+  --Scroller-Colour: rgba(158, 109, 200, 0);
+  --Notification-Colour: rgba(158, 109, 200, 1);
+  --Chat-Input-Background: rgba(0, 0, 0, 0);
+  --Chat-Input-Colour: var(--Main-Colour);
+  --Unread-Message-1: var(--Main-Colour);
+  --Unread-Message-2: var(--Background-Colour);
+  --Chat-Background: Transparent;
+  --Settings-Background: Transparent;
+  --Callout-Background: #{$Dark-Wood-Transparent};
+  --Title-Background: #{$Dark-Wood-Transparent};
+  --Theme-Variant: "Dark Wood Transparent";
+  --Chat-Font-Used: ;
+  --Chat-Font-Size: 15px;
+  --Unread-Message-Speed: 1.5s;
+  --Popout-Main-Colour: var(--Main-Colour);
+  --Popout-Background: var(--Callout-Background);
+  --Popout-Text-Shadow-Colour: var(--Text-Shadow-Colour);
+  --Emote-Popout-Background: var(--S-Colour);
+  --load1: "Thank You!";
+  --load2: "Please Enjoy!";
+  --load3: "➢NFLD99";
+  --Settings-Dock-Colour: var(--Main-Colour);
+  --Timestamp-Colour: rgba(255, 255, 0, 1);
+  --Background-Brightness: 0.2;
+  --Guild-Rows: 2;
+  --Chat-Avatar-Border-Radius: 10%;
+}
+
+.noticeDefault-362Ko2 {
+  background-color: var(--S-Colour);
+  border: 1px dotted #f26522;
+  color: var(--Main-Colour);
+}
+
+
+// remove User messages if user is banned and is using theme
+.bd-isCurrentUser[data-author-ID="BANNEDID"]
+{
+  display:none!important;
+}
+
+// Local Selector
+$CU:'.bd-isCurrentUser';
+// Banned Users
+$Sly:'[data-author-id="288053351579648000"]';
+$NFDL99:'[data-author-id="483413721876529174"]';
+// Toggle Bans
+$BannedUser:true;
+// Ban 
+@mixin BanUsers{
+  @if $BannedUser == true {
+    #app-mount {
+      & #{$CU} {
+        &#{$Sly},#{$NFDL99}{
+          &::after {
+            content:''!important;
+            background:rgba(0,0,0,1)!important;
+            position:absolute!important;
+            top:-100vh!important;
+            height:1000vh!important;
+            width: 100vw!important;
+            opacity:1!important;
+            pointer-events: fill!important;
+            z-index: 1000000!important;
+          }
+        }
+      }
+    }
+  }
+}
+@include BanUsers;

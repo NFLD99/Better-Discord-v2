@@ -1,0 +1,45 @@
+/* Thanks To uri#0002 For This Code, and to Square#3880 for helping me make it better */
+.channels-Ie2l6A > div:last-child{
+	position: relative;
+	overflow: visible;
+}
+
+.channels-Ie2l6A > div:last-child > div:last-child{
+	width: 35px;
+	height: 32px;
+	background-color: transparent!important;
+	border-radius: 5px!important;
+	margin: 0;
+	padding: 0 0 25px 0;
+	position: absolute;
+	bottom: 5px;
+	right: -10px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 200ms;
+	z-index: 3;
+	box-sizing: border-box;
+}
+
+.channels-Ie2l6A > div:last-child:hover > div:last-child:hover{
+	height: 95px;
+	width: 65px;
+	transition: 500ms ease-in-out;
+}
+
+.channels-Ie2l6A > div:last-child:hover > div:last-child:before{
+	opacity: 0.5;
+}
+
+.channels-Ie2l6A > div:last-child > div:last-child > div *{
+	left: 0;
+	display: none;
+}
+
+.channels-Ie2l6A > div:last-child:hover > div:last-child:hover > div *{
+	display: block;
+}
+
+/* Thanks To uri#0002 For This Code, and to Square#3880 for helping me make it better */

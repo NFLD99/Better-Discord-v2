@@ -1,0 +1,26 @@
+{
+    "info": {
+        "name": "NFLD99's v2 Source",
+        "authors": [ 
+			{
+				"name": "NFLD99[DEV]#0001",
+				"url": "https://nfld99.com/discord",
+				"discord_id": "483413721876529174",
+				"github_username": "nfld99",
+				"twitter_username": ""
+			}
+		],
+        "version": "1.0",
+        "description": "",
+        "icon_type": "image/gif",
+        "type": "sass"
+    },
+    "main": "hi.scss",
+    "defaultConfig": [
+        {
+            "category": "default",
+            "settings": [
+            ]
+        }
+    ]
+}

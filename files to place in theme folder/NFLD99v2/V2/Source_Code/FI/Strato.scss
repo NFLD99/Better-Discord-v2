@@ -1,0 +1,13 @@
+/* Strato#4763 */
+.large-3ChYtB:not(.popout-2fzvxG)[style*="avatars/322758556946530304"]::before {
+  content: #{$Strato};
+}
+
+.large-3ChYtB:not(.popout-2fzvxG)[style*="avatars/322758556946530304"]:hover::before {
+  content: #{$Strato};
+}
+
+.large-3ChYtB:not(.popout-2fzvxG)[style*="avatars/322758556946530304"]::after {
+  content: "Hello Im Strato! \a The man. The myth. The legend. \a 2nd Donator";
+}
+/* Strato#4763 */
