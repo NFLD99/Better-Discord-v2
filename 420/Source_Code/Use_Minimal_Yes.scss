@@ -1,0 +1,138 @@
+.bd-minimal .guild .guild-inner a.avatar-small {
+    width: 20px!important;
+    height: 20px!important;
+    background-size: 100%;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.guilds-wrapper .guilds-error {
+    width: 20px!important;
+    height: 20px!important;
+    background-size: 100%;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.bd-minimal .guilds-wrapper {
+  width: 115px;
+}
+
+.bd-minimal .guilds-wrapper .scroller-wrap {
+  width: 130px;
+}
+
+.bd-minimal .guilds-wrapper .guilds {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild {
+  position: relative;
+  margin: 8px 5px 2px 5px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 25px;
+  background: transparent !important;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .friends-icon {
+  background-size: 50%!important;
+  background-position: 30% 35%!important;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild .guild-inner a {
+  background-size: cover!important;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild.unread::before {
+  left: -2px;
+  top: 5px;
+  z-index: 9000;
+}
+
+.bd-minimal .guilds-wrapper .guilds > .guild:first-child {
+  position: relative;
+  left: 0;
+  margin: auto;
+}
+
+.bd-minimal #bd-pub-li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bd-minimal #bd-pub-li #bd-pub-button {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild-separator {
+  position: relative;
+  width: 100%;
+}
+
+.bd-minimal .guilds-wrapper .guilds .friends-online {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.bd-minimal .guilds-wrapper .guilds .guild.selected:before {
+  display: none;
+}
+
+.bd-minimal .guilds-wrapper .guilds .dms {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bd-minimal .guilds-wrapper .guilds .dms .guild {
+  left: 0;
+}
+
+.bd-minimal .guilds-wrapper .guilds .dms .guild {
+  margin: 8px 8px 8px 0;
+}
+
+.bd-minimal .guilds-wrapper .guilds .dms .guild + .guild {
+  margin-left: 0;
+}
+
+.bd-minimal .guilds-wrapper .guilds .dms:empty {
+  display: none;
+}
+.bd-minimal .guilds-wrapper .guilds .friends-icon {
+    background-position: 30% 35%!important;
+  width: 25px;
+  height: 25px;
+  background-image: url(https://rawgit.com/NFLD99/bc92e6e377868a28eded619818d02b00/raw/a4df7ac6b55c04fe84b1702e5eb9451ebab846b8/MSGs.svg);
+  background-size: 16px 14px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.bd-minimal .avatar-small {
+    max-width: 20px;
+    max-height: 20px;
+    background-size: 100%;
+    margin-right: 2px;
+    margin-top: 0;
+}
+.new-messages-indicator.new-messages-indicator-mention{
+	display:none;
+}
