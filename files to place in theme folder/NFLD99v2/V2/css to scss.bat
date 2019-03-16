@@ -1,1 +1,0 @@
-for /r %%x in (*.css) do ren "%%x" *.scss
