@@ -23,7 +23,7 @@
   $Chat-Input-Colour: var($Main-Colour) ;
   $Unread-Message-1: var($Main-Colour) ;
   $Unread-Message-2: var($Background-Colour) ;
-  $Chat-Background: url(https://nfld99.com/Bkg/52cPQtD.png);
+  $$Chat-Background: url(https://nfld99.com/Bkg/52cPQtD.png);
   $Settings-Background: url(https://nfld99.com/Bkg/52cPQtD.png);
   $Callout-Background: url(https://nfld99.com/Bkg/52cPQtD.png);
   $Title-Background: var($Background-Colour);
@@ -32,7 +32,7 @@
   $Chat-Font-Size: 15px;
   $Unread-Message-Speed: 1.5s;
   $Popout-Main-Colour: var($Main-Colour);
-  $Popout-Background: var($Chat-Background);
+  $Popout-Background: var($$Chat-Background);
   $Popout-Text-Shadow-Colour:var($Text-Shadow-Colour);
   $Emote-Popout-Background: var($S-Colour);
   $load1: "Thank You!";

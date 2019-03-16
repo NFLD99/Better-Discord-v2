@@ -14,11 +14,11 @@
 @keyframes Talking {
     0% {
         transform: rotate(-360deg) scale(1);
-		box-shadow: 0 0 0 2px var(--Main-Colour);
+		box-shadow: 0 0 0 2px $Main-Colour;
     }
     100% {
         transform: rotate(360deg) scale(1);
-		box-shadow: 0 0 0 2px var(--Main-Colour);
+		box-shadow: 0 0 0 2px $Main-Colour;
     }
 }
 
@@ -53,21 +53,21 @@
 
 @keyframes opacity {
   0% {
-    background-color: var(--Unread-Message-1);
+    background-color: $Unread-Message-1;
   }
 
   50% {
-    background-color: var(--Unread-Message-2);
+    background-color: $Unread-Message-2;
   }
 
   100% {
-    background-color: var(--Unread-Message-1);
+    background-color: $Unread-Message-1;
   }
 }
 
 @keyframes color_change {
   from {
-    color: var(--Background-Colour);
+    color: $Background-Colour;
   }
 
   to {
@@ -97,15 +97,15 @@
 
 @keyframes Connecting {
   0% {
-    background: var(--Chat-Background);
+    background: $Chat-Background;
   }
 
   50% {
-    background: var(--Settings-Background);
+    background: $Settings-Background;
   }
 
   100% {
-    background: var(--Callout-Background);
+    background: $Callout-Background;
   }
 }
 
@@ -329,13 +329,13 @@
 
 @keyframes NSFW {
   0% {
-    fill: var(--M-Colour);
+    fill: $M-Colour;
   }
   50% {
-    fill: var(--Main-Colour);
+    fill: $Main-Colour;
   }
   100% {
-    fill: var(--M-Colour);
+    fill: $M-Colour;
   }
 }
 
