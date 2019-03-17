@@ -1,3 +1,10 @@
+:root{
+    --Background-Brightness:$Background-Brightness;
+    --load1:$load1;
+    --load2:$load2;
+    --load3:$load3;
+}
+
 body {
 -webkit-backface-visibility: hidden;
 }
@@ -8,7 +15,7 @@ body{-webkit-backface-visibility:hidden;backface-visibility:hidden}
 
 body::after{z-index:-9999}
 
-body::after,.callout-backdrop::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;-webkit-filter:brightness($Background-Brightness) blur(var(--background-blur));filter:brightness($Background-Brightness) blur(var(--background-blur))}
+body::after,.callout-backdrop::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;-webkit-filter:brightness(var(--Background-Brightness)) blur(var(--background-blur));filter:brightness(var(--Background-Brightness)) blur(var(--background-blur))}
 
 .callout-backdrop::after{background-image:inherit}
 
@@ -39,34 +46,34 @@ body::after,.callout-backdrop::after{content:"";position:absolute;top:0;left:0;w
 
 #app-mount::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;color:#fff;font-size:50px;font-weight:700;text-align:center;line-height:100vh;opacity:0;z-index:9999;pointer-events:none;-webkit-animation:cv-init 3s ease-in-out;animation:cv-init 3s ease-in-out}
 
-@-webkit-keyframes cv-init{0%{content:$load1;-webkit-transform:scale(.7);transform:scale(.7)}
+@-webkit-keyframes cv-init{0%{content:var(--load1);-webkit-transform:scale(.7);transform:scale(.7)}
 25%{opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 30%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 45%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-49%{content:$load1;opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
-50%{content:$load2;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+49%{content:var(--load1);opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
+50%{content:var(--load2);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 55%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 70%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-74%{content:$load2;opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
-75%{content:$load3;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+74%{content:var(--load2);opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
+75%{content:var(--load3);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 80%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 95%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-99%{content:$load3;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+99%{content:var(--load3);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 100%{content:"";-webkit-transform:scale(1);transform:scale(1);opacity:0}
 }
-@keyframes cv-init{0%{content:$load1;-webkit-transform:scale(.7);transform:scale(.7)}
+@keyframes cv-init{0%{content:var(--load1);-webkit-transform:scale(.7);transform:scale(.7)}
 25%{opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 30%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 45%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-49%{content:$load1;opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
-50%{content:$load2;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+49%{content:var(--load1);opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
+50%{content:var(--load2);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 55%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 70%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-74%{content:$load2;opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
-75%{content:$load3;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+74%{content:var(--load2);opacity:0;-webkit-transform:scale(1.3);transform:scale(1.3)}
+75%{content:var(--load3);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 80%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
 95%{opacity:.3;-webkit-transform:scale(1);transform:scale(1)}
-99%{content:$load3;opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
+99%{content:var(--load3);opacity:0;-webkit-transform:scale(.7);transform:scale(.7)}
 100%{content:"";-webkit-transform:scale(1);transform:scale(1);opacity:0}
 }
  

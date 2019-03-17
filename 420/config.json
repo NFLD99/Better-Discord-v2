@@ -15,7 +15,7 @@
       "icon_type": "image/gif",
       "type": "sass"
   },
-  "main": "420.scss",
+  "main": "Source_Code/Master_Code.scss",
   "defaultConfig": [
       {
           "category": "default",
