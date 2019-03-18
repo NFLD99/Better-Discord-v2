@@ -2,12 +2,17 @@
 This Theme Uses Code From The Following Themes I DO NOT TAKE CREDIT FOR THE CODE USED FROM THEM,
 Please Check Them Out
 
-Simplified-Green made by den -> https://github.com/denBot/Simplistic-CSS/blob/master/Simplified-Green.theme.css   
-Server_Grid_2_Columns made by Jiiks -> https://gist.github.com/Jiiks/e1026d29aac91e7a7ad2d90dee87c90c 
+Simplified-Green made by den -> https://github.com/denBot/Simplistic-CSS/blob/master/Simplified-Green.theme.css
+Server_Grid_2_Columns made by Jiiks -> https://gist.github.com/Jiiks/e1026d29aac91e7a7ad2d90dee87c90c
 Status picker by URI -> https://cmpdc.github.io/bdtf/themes/FullScreenStatusPicker/fullScreenStatusPicker.theme.css
 
 */
 
+
+
+
+@import '../vars';
+@import 'addons';
 @import "FI_FIL.scss";
 :root {
   --Update-Text: " Update #269 ";
@@ -207,8 +212,8 @@ body:after {
 }
 
 .appMount-3VJmYg, .appMount-3lHmkl {
-  background: $Title-Background50% 50%/cover !important;
-  background-color: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: $Title-Background 50% 50%/cover !important;
+  background-color: rgba(0, 0, 0, #{$Background-Brightness}) !important;
 }
 
 .titleBar-AC4pGV {
@@ -255,12 +260,12 @@ body:after {
   background: rgba(97, 13, 170, 0.11)!important;
 }
 
-/* .theme-dark .ui-standard-sidebar-view .content-region, .ui-standard-sidebar-view .content-region,  .theme-dark .ui-standard-sidebar-view .sidebar-region,  .ui-standard-sidebar-view .sidebar-region { 
+/* .theme-dark .ui-standard-sidebar-view .content-region, .ui-standard-sidebar-view .content-region,  .theme-dark .ui-standard-sidebar-view .sidebar-region,  .ui-standard-sidebar-view .sidebar-region {
   background: rgba(0,0,0,0.5) !important
 } */
 
 .theme-dark .ui-standard-sidebar-view .content-region, .ui-standard-sidebar-view .content-region, .theme-dark .ui-standard-sidebar-view .sidebar-region, .ui-standard-sidebar-view .sidebar-region {
-  background: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: rgba(0, 0, 0, #{$Background-Brightness}) !important;
 }
 
 .theme-dark .ui-standard-sidebar-view, .theme-dark .standardSidebarView-3F1I7i {
@@ -268,7 +273,7 @@ body:after {
 }
 
 .callout-backdrop, .modal-1UGdnR, .header-2BwW8b, .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
-  background: rgba(0, 0, 0, $Background-Brightness)!important;
+  background: rgba(0, 0, 0, #{$Background-Brightness})!important;
 }
 
 .backdrop-1ocfXc, .backdrop-1wrmKB {
@@ -455,7 +460,7 @@ form.deprecated.auth-form footer {
 
 .markup-2BOw-j {
   color: #ffffff;
-  font-size: $Chat-Font-Size!important;
+  font-size: #{$Chat-Font-Size}!important;
 }
 
 .member.member-status.member-status-offline:hover {
@@ -660,7 +665,7 @@ span.ping {
 /* Guild Unread Message */
 
 .wrapper-1Rf91z .scroller-2TZvBN .container-1ETFDs.unread-2OHH1w:before {
-  animation: opacity $Unread-Message-Speed infinite linear;
+  animation: opacity #{$Unread-Message-Speed} infinite linear;
   background-color: $Unread-Message-1;
 }
 
@@ -4254,7 +4259,7 @@ div.form-inner, .form-actions {
 }
 
 #user-profile-modal, .userPopout-4pfA0d, .inner-1JeGVc {
-  background: $Popout-Background50% 50%/cover!important;
+  background: $Popout-Background 50% 50%/cover!important;
   text-shadow: 0 0 6px $Popout-Text-Shadow-Colour, 0 0 6px $Popout-Text-Shadow-Colour, 0 0 5px $Popout-Text-Shadow-Colour, 0 0 4px $Popout-Text-Shadow-Colour!important;
 }
 
@@ -4655,7 +4660,7 @@ div.form-inner, .form-actions {
 }
 
 .theme-dark .layers-3iHuyZ {
-  background: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: rgba(0, 0, 0, #{$Background-Brightness}) !important;
 }
 
 .theme-dark .layer-3QrUeG {
@@ -4714,7 +4719,7 @@ div.option-popout.small-popout-box, div.context-menu, .context-menu .context-men
 }
 
 #user-profile-modal, .userPopout-4pfA0d, .inner-1JeGVc {
-  background: $Popout-Background50% 50%/cover!important;
+  background: $Popout-Background 50% 50%/cover!important;
   text-shadow: 0 0 6px $Popout-Text-Shadow-Colour, 0 0 6px $Popout-Text-Shadow-Colour, 0 0 5px $Popout-Text-Shadow-Colour, 0 0 4px $Popout-Text-Shadow-Colour!important;
 }
 
@@ -5541,7 +5546,7 @@ a[href="https://nfld99.com/"]:after {
   font-size: 15px;
 }
 
-/* 
+/*
 a[href="https://nfld99.com/main"] {
   font-size: 0;
 }
@@ -5686,12 +5691,12 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
   border-color: $Main-Colour;
 }
 
-/* 
+/*
 [class*="notice"] {
   background-color: $Background-Colour;
   color: $Main-Colour;
   border: 1px solid $Main-Colour;
-} 
+}
 */
 
 .container-2VW0UT {
@@ -7375,7 +7380,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 
 .autocompleteInner-zh20B_ {
   border: 1px solid $M-Colour;
-  background: rgba(0, 0, 0, $Background-Brightness);
+  background: rgba(0, 0, 0, #{$Background-Brightness});
 }
 
 .theme-dark .selectorSelected-1_M1WV, .selectorSelected-1_M1WV {
@@ -7457,7 +7462,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 
 .canvas-3XuBXe {
   object-position: 9999px 9999px;
-  background: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: rgba(0, 0, 0, #{$Background-Brightness}) !important;
   filter: blur(0px);
 }
 
@@ -7469,7 +7474,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 
 .image-2jyRAK.loaded-3PtF_J {
   object-position: 9999px 9999px;
-  background: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: rgba(0, 0, 0, #{$Background-Brightness}) !important;
   filter: blur(0px);
 }
 
@@ -7620,9 +7625,9 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 
 .verticalDockItemSplash-jI35yB, .splashArt-3yFzRe, .background-17WUpK {
   -webkit-filter: grayscale(0%);
-  -webkit-mask: radial-gradient(100% 100% at top left, rgba(0, 0, 0, $Background-Brightness) 0, rgba(0, 0, 0, $Background-Brightness) 100%);
+  -webkit-mask: radial-gradient(100% 100% at top left, rgba(0, 0, 0, #{$Background-Brightness}) 0, rgba(0, 0, 0, #{$Background-Brightness}) 100%);
   filter: grayscale(0%);
-  mask: radial-gradient(100% 100% at top left, rgba(0, 0, 0, $Background-Brightness) 0, rgba(0, 0, 0, $Background-Brightness) 100%);
+  mask: radial-gradient(100% 100% at top left, rgba(0, 0, 0, #{$Background-Brightness}) 0, rgba(0, 0, 0, #{$Background-Brightness}) 100%);
 }
 
 .theme-dark .verticalDockFooterText-2t4w2m {
@@ -7630,7 +7635,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .theme-dark .header-1RC2Wb:hover {
-  background-color: rgba(10, 10, 10, $Background-Brightness);
+  background-color: rgba(10, 10, 10, #{$Background-Brightness});
 }
 
 .splashArt-3yFzRe {
@@ -7638,7 +7643,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .theme-dark .header-1RC2Wb {
-  background-color: rgba(0, 0, 0, $Background-Brightness);
+  background-color: rgba(0, 0, 0, #{$Background-Brightness});
   border-bottom-color: rgba(32, 34, 37, .6);
 }
 
@@ -7651,11 +7656,11 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .newsLink-38Naqi:hover {
-  background-color: rgba(10, 10, 10, $Background-Brightness);
+  background-color: rgba(10, 10, 10, #{$Background-Brightness});
 }
 
 .news-2GDtLJ {
-  background-color: rgba(0, 0, 0, $Background-Brightness);
+  background-color: rgba(0, 0, 0, #{$Background-Brightness});
 }
 
 .theme-dark .sectionTitle-1snBOS {
@@ -7679,7 +7684,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .article-FleDq5 {
-  background-color: rgba(0, 0, 0, $Background-Brightness);
+  background-color: rgba(0, 0, 0, #{$Background-Brightness});
 }
 
 .background-17WUpK {
@@ -7717,7 +7722,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .theme-dark .everyonePopout-nEbJY3 {
-  background: $Popout-Background50% 50%/cover!important;
+  background: $Popout-Background 50% 50%/cover!important;
   animation: Everyone 2.5s infinite linear, Everyone2 2s 1 linear;
   text-shadow: 0 0 6px $Text-Shadow-Colour, 0 0 6px $Text-Shadow-Colour, 0 0 5px $Text-Shadow-Colour, 0 0 4px $Text-Shadow-Colour;
 }
@@ -10000,8 +10005,8 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 }
 
 .appMount-3VJmYg, .appMount-3lHmkl {
-  background: $Title-Background50% 50%/cover !important;
-  background-color: rgba(0, 0, 0, $Background-Brightness) !important;
+  background: $Title-Background 50% 50%/cover !important;
+  background-color: rgba(0, 0, 0, #{$Background-Brightness}) !important;
 }
 
 .appMount-3VJmYg .popout-3sVMXz.popoutTopLeft-b5Eb3O, .appMount-3lHmkl .popout-3sVMXz.popoutTopLeft-b5Eb3O {
@@ -10226,7 +10231,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
   color: $Main-Colour;
 }
 
-/* 
+/*
 .button-38aScr[tabindex="2"], [Gift] {
   display: none;
 }
@@ -10241,7 +10246,7 @@ a[href="https://github.com/hammy1/BDPlugins"]:after {
 
 .button-38aScr[tabindex="5"], [Upload] {
   display: none;
-} 
+}
 */
 
 .theme-dark .otDetected-33MY4s .gameName-1RiWHm, .theme-light .notDetected-33MY4s .gameName-1RiWHm,.theme-dark .lastPlayed-3bQ7Bo, .theme-dark .overlayStatusText-L2IACa,.theme-dark .notDetected-33MY4s .lastPlayed-3bQ7Bo, .theme-light .notDetected-33MY4s .lastPlayed-3bQ7Bo,.theme-dark .nowPlayingAdd-1Kdmh_, .theme-light .nowPlayingAdd-1Kdmh_,.theme-dark .gameName-1RiWHm,.theme-dark .nowPlaying-284llR .gameName-1RiWHm, .theme-light .nowPlaying-284llR .gameName-1RiWHm,.theme-dark .nowPlaying-284llR .lastPlayed-3bQ7Bo, .theme-dark .nowPlaying-284llR .overlayStatusText-L2IACa, .theme-light .nowPlaying-284llR .lastPlayed-3bQ7Bo, .theme-light .nowPlaying-284llR .overlayStatusText-L2IACa{
@@ -10300,18 +10305,18 @@ transition: all 200ms;
 }
 
 .headerCozy-2N9HOL>div>div{
-  border-radius: $Chat-Avatar-Border-Radius!important;
+  border-radius: #{$Chat-Avatar-Border-Radius}!important;
 }
 
 /* Credit to MasicoreLord#5338 (197435711476072449) */
 .wrapper-1Rf91z.foldercontent.da-guildsWrapper.da-foldercontent.foldercontentopen>div {
-  width: calc($Guild-Rows * 60px + 2px)!important;
-  max-width: calc($Guild-Rows * 60px + 2px)!important;
+  width: calc(#{$Guild-Rows} * 60px + 2px)!important;
+  max-width: calc(#{$Guild-Rows} * 60px + 2px)!important;
 }
 
 .foldercontentopen>.scrollerWrap-1IAIlv {
-  width: calc($Guild-Rows * 60px + 2px)!important;
-  max-width: calc($Guild-Rows * 60px + 2px)!important;
+  width: calc(#{$Guild-Rows} * 60px + 2px)!important;
+  max-width: calc(#{$Guild-Rows} * 60px + 2px)!important;
   padding-left: 5px;
 }
 
@@ -10320,8 +10325,8 @@ transition: all 200ms;
 }
 
 .foldercontent {
-  width: calc($Guild-Rows * 60px + 2px)!important;
-  max-width: calc($Guild-Rows * 60px + 2px)!important;
+  width: calc(#{$Guild-Rows} * 60px + 2px)!important;
+  max-width: calc(#{$Guild-Rows} * 60px + 2px)!important;
   display: flex;
   flex-flow: row wrap;
   padding-left: 0;
@@ -10330,13 +10335,13 @@ transition: all 200ms;
 }
 
 .wrapper-1Rf91z {
-  width: calc($Guild-Rows * 60px + 2px)!important;
-  max-width: calc($Guild-Rows * 60px + 2px)!important;
+  width: calc(#{$Guild-Rows} * 60px + 2px)!important;
+  max-width: calc(#{$Guild-Rows} * 60px + 2px)!important;
 }
 
 .wrapper-1Rf91z .scrollerWrap-1IAIlv {
-  width: calc($Guild-Rows * 60px + 2px)!important;
-  max-width: calc($Guild-Rows * 60px + 2px)!important;
+  width: calc(#{$Guild-Rows} * 60px + 2px)!important;
+  max-width: calc(#{$Guild-Rows} * 60px + 2px)!important;
 }
 
 /* Credit to MasicoreLord#5338 (197435711476072449) */
@@ -10680,12 +10685,12 @@ transition: all 200ms;
   left: -2px;
   top: 5px;
   z-index: 30;
-  animation: opacity $Unread-Message-Speed infinite linear;
+  animation: opacity #{$Unread-Message-Speed} infinite linear;
   background-color: $Unread-Message-1;
 }
 
 .unread-2OHH1w:before {
-  animation: opacity $Unread-Message-Speed infinite linear;
+  animation: opacity #{$Unread-Message-Speed} infinite linear;
   background-color: $Unread-Message-1;
 }
 
@@ -10732,3 +10737,34 @@ transition: all 200ms;
 .banner-1TiK82[style*="/banners/"] {
   background-image: linear-gradient($S-Colour 50%, $Background-Colour 100%), $Popout-Background!important;
 }
+
+.noticeDefault-362Ko2 {
+  background-color: var(--S-Colour);
+  border: 1px dotted #f26522;
+  color: var(--Main-Colour);
+}
+
+.isSending-1nPcL7 {
+  opacity: .5;
+  animation: CLog 1s infinite linear;
+  color: var(--Main-Colour)!important;
+}
+
+.isSending-1nPcL7  > .markup-2BOw-j{
+  color: var(--Main-Colour)!important;
+}
+
+.noIcon-1a_FrS{
+  color: var(--Main-Colour);
+}
+
+.wrapper-2lTRaf[style*="background-color: rgb("]{
+  background: transparent!important;
+}
+// Code I added to fix while I did my shit - Sly
+// body {
+//   background:url($Chat-Background)!important;
+//   background-size: cover!important;
+//   background-position: top!important;
+//   background-repeat: no-repeat!important;
+// }

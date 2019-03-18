@@ -1,7 +1,7 @@
 {
   "info": {
-      "name": "420",
-      "authors": [ 
+      "name": "420_2",
+      "authors": [
     {
       "name": "NFLD99[DEV]#0001",
       "url": "https://nfld99.com/discord",
@@ -20,6 +20,97 @@
       {
           "category": "default",
           "settings": [
+            {
+              "id": "animations",
+              "type": "bool",
+              "value": false,
+              "text": "Animations",
+              "hint": ""
+            },
+            {
+              "id": "minimal",
+              "type": "bool",
+              "value": false,
+              "text": "Minimal",
+              "hint": ""
+            },
+            {
+              "id": "popup",
+              "type": "bool",
+              "value": true,
+              "text": "Popup",
+              "hint": ""
+            },
+            {
+              "id": "hide-channels",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Channels",
+              "hint": ""
+            },
+            {
+              "id": "hide-chattitlebar",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Chat Title Bar",
+              "hint": ""
+            },
+            {
+              "id": "hide-guilds",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Guilds",
+              "hint": ""
+            },
+            {
+              "id": "hide-invites",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Invites",
+              "hint": ""
+            },
+            {
+              "id": "hide-members",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Members",
+              "hint": ""
+            },
+            {
+              "id": "hide-windowsbar",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Windows Bar",
+              "hint": ""
+            },
+            {
+              "id": "hide-offline",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Offline",
+              "hint": ""
+            },
+            {
+              "id": "hide-popoutfooter",
+              "type": "bool",
+              "value": false,
+              "text": "Hide Popout Footer",
+              "hint": ""
+            },
+            {
+              "id": "transparency",
+              "type": "bool",
+              "value": false,
+              "text": "Transparency",
+              "hint": ""
+            },
+            {
+              "id": "Main-Colour",
+              "type": "color",
+              "value": "rgba(74,107,26,1)",
+              "text": "Main-Colour",
+              "hint": ""
+            }
           ]
       }
   ]
